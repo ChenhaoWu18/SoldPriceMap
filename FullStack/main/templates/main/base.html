@@ -4,10 +4,10 @@
     
 <head>
 
-    <style type='text/css'>
+    <style type="text/css">
         .sidenav{
             height: 100%;
-            width: 100px;
+            width: 130px;
             position: fixed;
             z-index: 1;
             top: 0;
@@ -20,7 +20,7 @@
         .sidenav a {
             padding: 6px 8px 6px 16px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 22px;
             color: #0B902E;
             display: block;
         }
@@ -45,7 +45,6 @@
         h3 {
             color:#D8BEDE 
         }
-
         h4 {
             color:#F29317
         }
@@ -57,10 +56,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href='http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css' rel='stylesheet' type='text/css'>
-    <link href='http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.css' rel='stylesheet' type='text/css'>
-    <script src='http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js'></script>
-    <script src='http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.js'></script>
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.css" rel="stylesheet" type="text/css">
+    <link href="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.css" rel="stylesheet" type="text/css">
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-1.2.0.min.js"></script>
+    <script src="http://cdn.pydata.org/bokeh/release/bokeh-widgets-1.2.0.min.js"></script>
     
     {{ script | safe }}
     <title>{% block title%}land technologies{% endblock%}</title>
@@ -69,16 +68,16 @@
 
 <body>
     
-     <div class='sidenav'>
-        <a href = '/'><b>Home</a>
+     <div class="sidenav">
+        <a href = "/"><b>Home</a>
     </div>
     
     
-    <div id='content', name='content',class='main'>
-         <div class='row justify-content-center'>
-            <div class='col-8'>
-                <h3 class='mt-2'>Example website</h3>
-                <hr class='mt-0 mb-4'>
+    <div id="content", name="content",class="main">
+         <div class="row justify-content-center">
+            <div class="col-8">
+                <h3 class="mt-2">Example website</h3>
+                <hr class="mt-0 mb-4">
                 
                 {% block content%}
                     <h1> Welcome! </h1>
