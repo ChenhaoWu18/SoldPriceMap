@@ -10,7 +10,7 @@
   
   This command wil generate a png file called spm.png with graph size 6 and scatter dot size 8
   
-  <img src='/Backend/priceMap.png' height="50%" width="50%">
+  <img src='/Backend/spm.png' height="50%" width="50%">
 
 - detail explaination for the inputs
 
