@@ -1,4 +1,5 @@
 # SoldPriceMap
+#### A. Describe the problem and proposed solution
 The problem I try to solve here is load the text file data and plot the data in a heatmap style on a website.
 ```
 The steps I took are:
@@ -27,7 +28,7 @@ The steps I took are:
       5.3 Although diffierent input files can be processed, the data structure have to be X, Y, Z. Otherwise the remining column would be ignored. Also if there are only two column of data in the text file, there will be an error. I would like to solve this later.
       5.5 more exception and validation need to be added to validate the inputs.
  ```
-#### For the Backend/junior role
+#### B. For the Backend/junior role
 
 - Go to the [Backend](Backend) folder:
   Download the [readdata_pandas_plt](Backend/readdata_pandas_plt.py) file;
@@ -53,7 +54,7 @@ The steps I took are:
             I suggest choosing a number similar to the graph size,
             so that a larger graph has bigger dots.
 
-#### Simple website demo
+#### C. Simple website demo
 Please clone this repo for easier running of the code.
 - Go to [FullStack](FullStack) folder.
   * If you have copied/cloned all folders and files from FullStack dir:
@@ -69,7 +70,7 @@ Please clone this repo for easier running of the code.
 
 
 
-#### Other works in my [repositories](https://github.com/ChenhaoWu18)
+#### D. Other works in my [repositories](https://github.com/ChenhaoWu18)
  - The [books](https://github.com/ChenhaoWu18/BTFurther_modules) I wrote for [BT Further apprentice software engineer training](https://www.codefirstgirls.org.uk/bt--cfg-digital-intensive.html).
  - I have experimented with Kivy to write [phone apps](https://github.com/ChenhaoWu18/KivyProject_sandbox).
  - Django website for [to do list](https://github.com/ChenhaoWu18/DjangoProject_sandbox).
