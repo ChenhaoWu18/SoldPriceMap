@@ -9,6 +9,8 @@
   python readdata_pandas_plt.py sold-price-data.txt spm.png 6 8
   
   This command wil generate a png file called spm.png with graph size 6 and scatter dot size 8
+  
+  <img src='/Backend/priceMap.png' height="20%" width="20%">
 
 - detail explaination for the inputs
 
