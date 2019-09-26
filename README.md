@@ -1,5 +1,5 @@
 # SoldPriceMap
-#### For the Backend/Junior role
+#### For the () Backend role
 
 - go to [Backend](Backend) folder:
   download the [readdata_pandas_plt](Backend/readdata_pandas_plt.py) file;
@@ -23,5 +23,13 @@
             suggest choose a number similar with graph size,
             so the larger of the graph the bigger the dots.
 
-#### For the Backend/FullStack role:
-- go to [FullStack](FullStack) folder:
+#### simple website demo
+Please clone this repo for easier run the code.
+- go to [FullStack](FullStack) folder.
+  * if you have copy/cloned all folder and files from FullStack dir:
+  
+   ** run python manage.py runserver
+   ** open local server http://127.0.0.1:8000/
+  
+<img src='/FullStack/webDemo.png' height="50%" width="50%">
+
