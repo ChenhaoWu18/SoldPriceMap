@@ -18,7 +18,7 @@ The steps I took are:
     4. Plotted each point onto a grid. 
         The points are filled with colours representing how expensive a house was in relation to other houses. 
         You are able to choose: 
-          - The plot graph size.
+          - The size of the plot graph.
           - The size of the points.
           - The different input.txt file names. 
           - The output.png file names.
