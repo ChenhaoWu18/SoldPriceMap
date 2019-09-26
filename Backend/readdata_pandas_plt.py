@@ -2,32 +2,32 @@ info_doc = '''
 * Inputs:
     arg1 -  input-text-data-file-name.txt
     arg2 -  output-graph-file-name.pny
-    arg3 -  the size of the output graph,
-            suggest choose a number between 5-30.
+    arg3 -  The size of the output graph,
+            I suggest choosing a number between 5 and 30.
            
-    arg4 -  the size of each scatter points in the graph,
-            suggest choose a number similar with graph size,
-            so the larger of the graph the bigger the dots.
+    arg4 -  The size of each scatter point in the graph,
+            I suggest choosing a number similar to the graph size,
+            so that a larger graph has bigger dots.
             
-* For example, copy the command to terminal: 
+* For example, copy this command to the terminal: 
     python readdata_pandas_plt.py sold-price-data.txt priceMap.png 6 8
     
     Hint enter to run the code, you can then find a file called priceMap.png
-    which contain the graph the program just ploted. 
+    which contains the graph that the program just ploted. 
 
-* What this file do?
-    1. read text file to dataframe (X, Y, P)
-    2. plot each point on a grid. 
-        The points filled with a colour to representing how expensive 
+* What does this file do?
+    1. Reads the text file to dataframe (X, Y, P)
+    2. Plots each point onto a grid. 
+        The points are filled with colours representing how expensive 
         a house was in relation to other houses. 
-    3. boundries of the color range are: 
+    3. The boundries of the color range are: 
         0% - 5%     yellow
         5% - 25%    pink
         25% - 75%   red
         75% - 95%   green
         95% - 100%  cyan
 
-* libraries used: matplotlib, pandas, numpy, sys
+* The libraries used are: matplotlib, pandas, numpy, sys
 '''
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
@@ -48,11 +48,11 @@ def file2Dataframe(inFile):
 
 def data2plot(inFile,outFile,fsize=None, dotsize=None):
     
-    #1. save X, Y, P values to a dataframe 
+    # 1 Saves X, Y, P values to a dataframe. 
     dX, dY, dP = file2Dataframe(inFile)
     
     
-    # 2 prepare for plot with figure size, color boundaries etc
+    # 2 Prepare for plot with figure size, color boundaries, etc.
     if fsize == None:
         fsize=6
     fsize = int(fsize)
@@ -62,7 +62,7 @@ def data2plot(inFile,outFile,fsize=None, dotsize=None):
     norm3 = colors.BoundaryNorm(bounds, cmap.N)
     
     
-    # 3 plot scatter with color bar
+    # 3 Plot scatterpoints with a color bar.
     if dotsize == None:
         dotsize=5
     dotsize = int(dotsize)
@@ -79,12 +79,12 @@ def data2plot(inFile,outFile,fsize=None, dotsize=None):
     
 
 def main():
-    # 1 sys input check, can add more exceptions 
+    # 1 Do a sys input check. More exceptions can be added. 
     if (len(sys.argv)) != 5:
         print (info_doc)
         sys.exit(1)
         
-    # 2 link sys input to function inputs
+    # 2 Link the sys input to function's input.
     inFile = sys.argv[1]
     outFile = sys.argv[2]
     fsize = sys.argv[3]
