@@ -6,7 +6,9 @@
   Save it in the same folder as sold-price-data.txt 
   
 - Example command in terminal: 
+  ```
   python readdata_pandas_plt.py sold-price-data.txt spm.png 6 8
+  ```
   
   This command wil generate a png file called spm.png with a graph size of 6 and a scatter dot size of 8.
   
@@ -28,7 +30,10 @@ Please clone this repo for easier running of the code.
 - Go to [FullStack](FullStack) folder.
   * If you have copied/cloned all folders and files from FullStack dir:
   
-   Run the command: python manage.py runserver
+   Run the command: 
+   ```
+   python manage.py runserver
+   ```
    
    Open the local server http://127.0.0.1:8000/
   
