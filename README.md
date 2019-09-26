@@ -81,4 +81,5 @@ Please clone this repo for easier running of the code.
  - Django website for [internal website](https://github.com/ChenhaoWu18/CourseWeb_sandbox) of a programme I [taught](https://oxmedica.com/about/).  
  
 #### E. Contact information
-Please feel free to give suggestions through my email: chenhao.wu18@gmail.com or through my [LinkedIn] (https://www.linkedin.com/in/chenhao-wu-31985720/)
+Please feel free to give suggestions through my email: chenhao.wu18@gmail.com 
+or through my [LinkedIn](https://www.linkedin.com/in/chenhao-wu-31985720/)
