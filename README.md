@@ -11,13 +11,13 @@
   This command wil generate a png file called priceMap.png with graph size 6 and scatter dot size 8
 
 - detail explaination for the inputs
-* Inputs:
-    arg1 -  input-text-data-file-name.txt
-    arg2 -  output-graph-file-name.pny
-    arg3 -  the size of the output graph,
+
+    * arg1 -  input-text-data-file-name.txt
+    * arg2 -  output-graph-file-name.pny
+    * arg3 -  the size of the output graph,
             suggest choose a number between 5-30.
            
-    arg4 -  the size of each scatter points in the graph,
+    * arg4 -  the size of each scatter points in the graph,
             suggest choose a number similar with graph size,
             so the larger of the graph the bigger the dots.
 
