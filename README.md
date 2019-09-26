@@ -1,12 +1,10 @@
 # SoldPriceMap
 #### A. Problem description and proposed solution
-The problem I tried to solve here is to load the text file data and plot the data into a heatmap style scatter-graph on a website.
+The problem I tried to solve here is to load the text file data and plot the data into a heatmap style scatter-graph on a website. Please see this flow diagram for the steps I took to solve the problem and the detailed descriptions that follow below:
 
 
-Please see the flow diagram for the steps I took to solve the problem, the detailed descriptions followed below:
-                           
-                           <img src='flowdia.png' height="50%" width="50%">
-                           
+<img src='flowdia.png' height="50%" width="50%">
+
 ```
 The steps I took are:
     1. Reading the text file to a dataframe (using pandas.read_csv).
@@ -82,4 +80,5 @@ Please clone this repo for easier running of the code.
  - Django website for [to do list](https://github.com/ChenhaoWu18/DjangoProject_sandbox).
  - Django website for [internal website](https://github.com/ChenhaoWu18/CourseWeb_sandbox) of a programme I [taught](https://oxmedica.com/about/).  
  
-
+#### E. Contact information
+Please feel free to give suggestions through my email: chenhao.wu18@gmail.com or through my [LinkedIn] (https://www.linkedin.com/in/chenhao-wu-31985720/)
