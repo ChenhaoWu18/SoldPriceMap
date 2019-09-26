@@ -28,8 +28,9 @@ Please clone this repo for easier run the code.
 - go to [FullStack](FullStack) folder.
   * if you have copy/cloned all folder and files from FullStack dir:
   
-   ** run python manage.py runserver
-   ** open local server http://127.0.0.1:8000/
+   run command: python manage.py runserver
+   
+   open local server http://127.0.0.1:8000/
   
 <img src='/FullStack/webDemo.png' height="50%" width="50%">
 
