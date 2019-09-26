@@ -1,32 +1,32 @@
 # SoldPriceMap
-#### A. Describe the problem and proposed solution
-The problem I try to solve here is load the text file data and plot the data in a heatmap style on a website.
+#### A. Problem description and proposed solution
+The problem I tried to solve here is to load the text file data and plot the data into a heatmap style scatter-graph on a website.
 ```
 The steps I took are:
-    1. Reads the text file to a dataframe (using pandas.read_csv) 
-    2. Covert the price value (P) to relative/percentage price, meaning (P1, P2,...Pn)/(Max_P-Min_P).  
-    3. color proportional and % boundaries for the plot, here I used two method:
+    1. Reading the text file to a dataframe (using pandas.read_csv).
+    2. Coverting the price value (P) to relative/percentage price, meaning (P1, P2,...Pn)/(Max_P-Min_P).  
+    3. Setting the colour proportions and % boundaries for the plot, for which I used two methods:
       3.1 Using matplotlib.colors.BoundaryNorm to normalise the ListedColormap with suggested boundaries.
       3.2 Using bokeh.plotting for the realtime web plot display. 
-         3.2.1 It was not as simple as BoundaryNorm, and I have wrote a function (colorRange) to locate each colour with different price boundaries.
-      3.3 Fo both approach, the boundries of the color range are: 
+         3.2.1 It was not as simple as BoundaryNorm, and I have written a function (colorRange) to locate each colour with different price boundaries.
+      3.3 For both approaches, the boundaries of the colour range are: 
         0% - 5%     yellow
         5% - 25%    pink
         25% - 75%   red
         75% - 95%   green
         95% - 100%  cyan
-     4. Plots each point onto a grid. 
+    4. Plotted each point onto a grid. 
         The points are filled with colours representing how expensive a house was in relation to other houses. 
         You are able to choose: 
-          the plot graph size, 
-          point size, 
-          different input.txt file names 
-          and output.png file names 
+          - The plot graph size.
+          - The size of the points.
+          - The different input.txt file names. 
+          - The output.png file names.
     5. Compromises and assumptions:
-      5.1 I have run out of time while working on the plot in bokeh/web version, it would be great to know how to display the colorbar in the proportional style as shown in the matplotlib plot.
-      5.2 I personally did not have much experience in unit testing, I would like to add some of it later.
-      5.3 Although diffierent input files can be processed, the data structure have to be X, Y, Z. Otherwise the remining column would be ignored. Also if there are only two column of data in the text file, there will be an error. I would like to solve this later.
-      5.5 more exception and validation need to be added to validate the inputs.
+      5.1 I ran out of time while working on the plot in the bokeh/web version. Also it would be great to know how to display the colour bar in the proportional style shown in the matplotlib plot.
+      5.2 I personally did not have much experience in unit testing, so I would like to add some more to it later.
+      5.3 Although diffierent input files can be processed, the data structure has to be X, Y, Z (X and Y for coordinates, Z for price). Otherwise the remaining column would be ignored. Also if there are only two columns of data in the text file, there will be an error. I would like to solve this later.
+      5.5 More exceptions and validation needs to be added to validate the inputs.
  ```
 #### B. For the Backend/junior role
 
