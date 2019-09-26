@@ -37,7 +37,7 @@ Please clone this repo for easier running of the code.
 The plot in this version was used by bokeh library. I have run out of time on this, but it would be great to know how to display the colorbar in the proportional style as shown in the first graph.
 
 #### Other works in my [repo](https://github.com/ChenhaoWu18)
- - The book I wrote for BT Further junior software engineer training.
+ - The [books](https://github.com/ChenhaoWu18/BTFurther_modules) I wrote for [BT Further apprentice software engineer training](https://www.codefirstgirls.org.uk/bt--cfg-digital-intensive.html).
  - I have experiment Kivy to write [phone apps](https://github.com/ChenhaoWu18/KivyProject_sandbox).
  - Django website for [to do list](https://github.com/ChenhaoWu18/DjangoProject_sandbox).
  - Django website for [internal website](https://github.com/ChenhaoWu18/CourseWeb_sandbox) of a programme I tought.  
