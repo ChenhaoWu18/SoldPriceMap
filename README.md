@@ -4,7 +4,9 @@ The problem I tried to solve here is to load the text file data and plot the dat
 
 
 Please see the flow diagram for the steps I took to solve the problem, the detailed descriptions followed below:
+                           
                            <img src='flowdia.png' height="50%" width="50%">
+                           
 ```
 The steps I took are:
     1. Reading the text file to a dataframe (using pandas.read_csv).
