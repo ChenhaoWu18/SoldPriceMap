@@ -26,6 +26,8 @@ info_doc = '''
         25% - 75%   red
         75% - 95%   green
         95% - 100%  cyan
+
+* libraries used: matplotlib, pandas, numpy, sys
 '''
 import matplotlib.pyplot as plt
 import matplotlib.colors as colors
@@ -77,7 +79,7 @@ def data2plot(inFile,outFile,fsize=None, dotsize=None):
     
 
 def main():
-    # 1 sys input check 
+    # 1 sys input check, can add more exceptions 
     if (len(sys.argv)) != 5:
         print (info_doc)
         sys.exit(1)
