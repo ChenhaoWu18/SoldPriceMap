@@ -38,7 +38,7 @@ The plot in this version was used by bokeh library. I have run out of time on th
 
 #### Other work
  - The book I wrote for BT Further junior software engineer training.
- - I have experiment Kivy to write [phone apps](KivyProject_sandbox).
+ - I have experiment Kivy to write [phone apps](https://github.com/ChenhaoWu18/KivyProject_sandbox).
  - Django website for [to do list](DjangoProject_sandbox).
  - Django website for [internal website](CourseWeb_sandbox) of a programme I tought.  
  
