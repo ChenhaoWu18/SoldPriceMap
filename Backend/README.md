@@ -1,3 +1,38 @@
+* Updates 08/10/19:
+    1. Updated the file name to plotSoldPriceMap_v2.py
+    2. Using getopt command line flag I/O rather than args.
+        Reason: more informative, graph size and dot size become optional inputs. 
+    3. Updated varible/function names (I really appreciate for the feedback!)
+        -- Updated variable names to readable camel style. 
+        -- Updated function names to readable snake style (sometimes combined with camel style within the name).   
+        -- Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
+    4. Added code structure for main functionalities explaination.
+
+* Input flags
+    -h : Print this help message and exit.
+    -i FILE : input-text-data-file-name.txt, process text from input file FILE.
+    -o FILE : output-graph-file-name.png, write results to output file FILE.
+    -g PARAMETER: The size of the output graph, 
+                    I suggest choosing a number between 5 and 30.
+    -d PARAMETER: The size of each scatter point in the graph, 
+                    I suggest choosing a number similar to the graph size,
+                    so that a larger graph has bigger dots.
+                    
+                    
+* Example inputs: copy this command to the terminal: 
+        1. Using the default graph size and dot size:
+        '''
+            python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png 
+            '''
+       
+        2. Using a customesed graph size and dot size:
+            '''
+            python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png -g 6 -d 8
+            '''
+        
+        3. Hint: enter to run the code, you can then find a file called priceMap.png
+            which contains the graph that the program just ploted. 
+    
 * What does this file do?
     1. Reads the text file to the dataframe (X, Y, P).
     2. Plots each point onto a grid. 
@@ -31,17 +66,6 @@
             (2) Plots the sold price map graph with a colour bar (see more details within the function).
             (3) Save the plot to a .png file.
             
-
-* Updates 08/10/19:
-    1. Updated the file name to plotSoldPriceMap_v2.py
-    2. Using getopt command line flag I/O rather than args.
-        Reason: more informative, graph size and dot size become optional inputs. 
-    3. Updated varible/function names (I really appreciate for the feedback!)
-        -- Updated variable names to readable camel style. 
-        -- Updated function names to readable snake style (sometimes combined with camel style within the name).   
-        -- Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
-    4. Added code structure for main functionalities explaination.
-
 
 * Futher improvements:
     a. Unit tests - coming later.
