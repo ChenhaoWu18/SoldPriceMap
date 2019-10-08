@@ -49,6 +49,7 @@
 <img src='code_structure_spm.png' height="50%" width="50%">
 
 ```
+   Detailed instructions:
    1. main function 
         I/O: Inputs: From the command line with flag -i -o -g -d (link to dataFrame_2_plot function inputs);
              Output: A .png file as the sold price map (link from dataFrame_2_plot function output)
@@ -73,8 +74,8 @@
     *  Unit tests - coming later.
     *  System tests - coming later.
     *  Using both short and long input options 
-    ``` e.g. 'h:i:o:g:d:',
-        ['help','inFile','outFile','graphSize','dotSize'].
+    ``` 
+        e.g. 'h:i:o:g:d:' with ['help','inFile','outFile','graphSize','dotSize'].
     ```
     *  I can add code structure for the command line flag settings if required.
 
