@@ -20,15 +20,15 @@
                     
                     
 * Example inputs: copy this command to the terminal: 
-    1. Using the default graph size and dot size:           
+    *   Using the default graph size and dot size:           
     ```
         python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png    
     ```
-    2. Using a customesed graph size and dot size:      
+    *   Using a customesed graph size and dot size:      
     ```
         python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png -g 6 -d 8  
     ```
-    3. Hint: enter to run the code, you can then find a file called priceMap.png            
+    *   Hint: enter to run the code, you can then find a file called priceMap.png            
         which contains the graph that the program just ploted. 
         
 * What does this file do?
@@ -48,6 +48,7 @@
 
 <img src='code_structure_spm.png' height="50%" width="50%">
 
+```
    1. main function 
         I/O: Inputs: From the command line with flag -i -o -g -d (link to dataFrame_2_plot function inputs);
              Output: A .png file as the sold price map (link from dataFrame_2_plot function output)
@@ -67,7 +68,7 @@
             (2) Plots the sold price map graph with a colour bar (see more details within the function).
             (3) Save the plot to a .png file.
             
-
+```
 * Futher improvements:
     *  Unit tests - coming later.
     *  System tests - coming later.
