@@ -1,3 +1,4 @@
+```
 * Updates 08/10/19:
     1. Updated the file name to plotSoldPriceMap_v2.py
     2. Using getopt command line flag I/O rather than args.
@@ -7,7 +8,7 @@
         -- Updated function names to readable snake style (sometimes combined with camel style within the name).   
         -- Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
     4. Added code structure for main functionalities explaination.
-
+```
 * Input flags
     * -h : Print this help message and exit.
     * -i FILE : input-text-data-file-name.txt, process text from input file FILE.
