@@ -80,4 +80,5 @@
     ```
     *  I can add code structure for the command line flag settings if required.
 
-#### F. The libraries used are: matplotlib, pandas, numpy, sys, & getopt.
+#### F. The libraries used are: 
+matplotlib, pandas, numpy, sys, & getopt.
