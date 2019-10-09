@@ -1,3 +1,4 @@
+```
 * Updates 08/10/19:
     1. Updated the file name to plotSoldPriceMap_v2.py
     2. Using getopt command line flag I/O rather than args.
@@ -7,36 +8,36 @@
         -- Updated function names to readable snake style (sometimes combined with camel style within the name).   
         -- Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
     4. Added code structure for main functionalities explaination.
-
+```
 * Input flags
-    -h : Print this help message and exit.
-    -i FILE : input-text-data-file-name.txt, process text from input file FILE.
-    -o FILE : output-graph-file-name.png, write results to output file FILE.
-    -g PARAMETER: The size of the output graph, 
+    * -h : Print this help message and exit.
+    * -i FILE : input-text-data-file-name.txt, process text from input file FILE.
+    * -o FILE : output-graph-file-name.png, write results to output file FILE.
+    * -g PARAMETER: The size of the output graph, 
                     I suggest choosing a number between 5 and 30.
-    -d PARAMETER: The size of each scatter point in the graph, 
+    * -d PARAMETER: The size of each scatter point in the graph, 
                     I suggest choosing a number similar to the graph size,
                     so that a larger graph has bigger dots.
                     
                     
 * Example inputs: copy this command to the terminal: 
-    1. Using the default graph size and dot size:           
+    *   Using the default graph size and dot size:           
     ```
         python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png    
     ```
-    2. Using a customesed graph size and dot size:      
+    *   Using a customesed graph size and dot size:      
     ```
         python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png -g 6 -d 8  
     ```
-    3. Hint: enter to run the code, you can then find a file called priceMap.png            
+    *   Hint: enter to run the code, you can then find a file called priceMap.png            
         which contains the graph that the program just ploted. 
         
 * What does this file do?
-    1. Reads the text file to the dataframe (X, Y, P).
-    2. Plots each point onto a grid. 
+    *  Reads the text file to the dataframe (X, Y, P).
+    *  Plots each point onto a grid. 
         The points given colours representing how expensive 
         a house was in relation to other houses. 
-    3. The boundries of the color range are: 
+    *  The boundries of the color range are: 
         0% - 5%     yellow
         5% - 25%    pink
         25% - 75%   red
@@ -46,9 +47,11 @@
     
 * Code structure for main functionalities:
 
-<img src='code_structure_spm.pdf' height="50%" width="50%">
+<img src='code_structure_spm.png' height="50%" width="50%">
 
-    1. main function 
+```
+   Detailed instructions:
+   1. main function 
         I/O: Inputs: From the command line with flag -i -o -g -d (link to dataFrame_2_plot function inputs);
              Output: A .png file as the sold price map (link from dataFrame_2_plot function output)
         Steps:
@@ -67,14 +70,14 @@
             (2) Plots the sold price map graph with a colour bar (see more details within the function).
             (3) Save the plot to a .png file.
             
-
+```
 * Futher improvements:
-    a. Unit tests - coming later.
-    b. System tests - coming later.
-    c. Using both short and long input options e.g. 'h:i:o:g:d:',
+    *  Unit tests - coming later.
+    *  System tests - coming later.
+    *  Using both short and long input options 
+    ``` 
+        e.g. 'h:i:o:g:d:' with ['help','inFile','outFile','graphSize','dotSize'].
     ```
-        ['help','inFile','outFile','graphSize','dotSize'].
-    ```
-    d. I can add code structure for the command line flag settings if required.
+    *  I can add code structure for the command line flag settings if required.
 
 * The libraries used are: matplotlib, pandas, numpy, sys, & getopt.
