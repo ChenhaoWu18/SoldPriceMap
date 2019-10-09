@@ -39,18 +39,19 @@
         The points given colours representing how expensive 
         a house was in relation to other houses. 
    *  The boundries of the color range are: 
-        0% - 5%     yellow
-        5% - 25%    pink
-        25% - 75%   red
-        75% - 95%   green
-        95% - 100%  cyan
-    
+        ```
+            0% - 5%     yellow
+            5% - 25%    pink
+            25% - 75%   red
+            75% - 95%   green
+            95% - 100%  cyan
+        ```
     
 #### D. Code structure for main functionalities:
 
 <img src='code_structure_spm.png' height="50%" width="50%">
 
-    ```
+    
        Detailed instructions:
        1. main function 
             I/O: Inputs: From the command line with flag -i -o -g -d (link to dataFrame_2_plot function inputs);
@@ -71,7 +72,7 @@
                 (2) Plots the sold price map graph with a colour bar (see more details within the function).
                 (3) Save the plot to a .png file.
 
-    ```
+    
 #### E. Futher improvements:
    *  Unit tests - coming later.
    *  System tests - coming later.
