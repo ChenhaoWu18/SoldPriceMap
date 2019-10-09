@@ -64,12 +64,16 @@ Please clone this repo for easier running of the code.
 - Go to [FullStack](FullStack) folder.
   * If you have copied/cloned all folders and files from FullStack dir:
   
-    - installations:
-       Required libraries are listed in requirements.txt file, run the installation for Django and Bokeh with:
+    - Installations:
+    
+       Required libraries are listed in requirements.txt file. 
+       
+       Run the installation for Django and Bokeh with:
        ```
        pip install -r requirements.txt
        ```
-    - run python code: 
+    - Run python code: 
+    
        Run the command: 
        ```
        python manage.py runserver
