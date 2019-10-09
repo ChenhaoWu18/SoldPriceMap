@@ -74,7 +74,7 @@ OPTIONS:
         ['help','inFile','outFile','graphSize','dotSize'].
     d. I can add code structure for the command line flag settings if required.
 
-* The libraries used are: matplotlib, pandas, numpy, sys, & getopt.
+* The libraries used are: matplotlib, pandas, numpy, sys & getopt.
 ********************************************************************************
 """
 
@@ -85,6 +85,9 @@ import pandas as pd
 import numpy as np
 import sys, getopt
 
+#######
+# SECTION FOR COVERT DATA TO GRAPH
+#######
 
 
 def inFile_2_dataFrame(inFile):
@@ -103,7 +106,7 @@ def dataFrame_2_plot(inFile,outFile,graphSize, dotSize):
     dX, dY, dP = inFile_2_dataFrame(inFile)
     
     # 2 Plots the sold price map graph with a colour bar. 
-    #    2.a Prepares for plot with figure size, selected colour and colour boundaries, etc.
+    #    2.a Prepares for plot with figure size, selected colour and colour boundaries.
     graphSize = int(graphSize)
     fig,ax = plt.subplots(figsize=(graphSize,graphSize))
     cmap = colors.ListedColormap(['yellow','pink','red', 'green', 'cyan'])
@@ -125,7 +128,9 @@ def dataFrame_2_plot(inFile,outFile,graphSize, dotSize):
     # 3 Save the plot to a .png file.
     plt.savefig(outFile, bbox_inches='tight')
 
-
+#######
+# SECTION FOR ORGNISING COMMANDLINE INPUTS 
+#######
 
 def commandLine_printHelp():
     progName = sys.argv[0]
@@ -135,23 +140,24 @@ def commandLine_printHelp():
     sys.exit() #Normal exit.
     
 def commandLine_flagOptions():
-    # 1. Validate the command line inputs.
+    # 1. Validating the command line inputs.
     #    1.a. Checking command line syntax.
     try:
-        opts, args = getopt.getopt(sys.argv[1:], 'h:i:o:g:d:') #beware the last :
+        opts, args = getopt.getopt(sys.argv[1:], 'h:i:o:g:d:') #beware the last ':'
     except getopt.GetoptError:
-        sys.exit(2) #Use 2 for command line syntax errors and 1 for all other kind of errors.
+        sys.exit(2) #Use exit(2) for command line syntax errors and exit(1) for all other kind of errors.
     opts = dict(opts)
     
     #    1.b. If the are no flags.
-    if len(args) > 0: # Do a sys input check. More exceptions can be added. 
+    if len(args) > 0: # Do a sys input check.  
         print("\n** ERROR: no arg files - only options! **", file=sys.stderr)
         commandLine_printHelp()
     
     #2 Generic & specified error messages based on flag info (for mandatory inputs).
+        #2.a print out general help message if calling -h
     if '-h' in opts:
         commandLine_printHelp()
-    
+        #2.b if mandatory inputs missing
     if '-i' not in opts:
         print("\n** ERROR: must specify input text file (opt: -i)! **", file=sys.stderr) 
         commandLine_printHelp()
@@ -160,7 +166,7 @@ def commandLine_flagOptions():
         print("\n** ERROR: must specify output text file (opt: -o)! **", file=sys.stderr)
         commandLine_printHelp()
     
-    # 3 Give default values for optional flags.
+    # 3 Give default values for optional inputs/flags.
     if '-g' not in opts:
         opts['-g'] = 6 # Default graph size.
     
@@ -169,7 +175,10 @@ def commandLine_flagOptions():
         
     return opts
     
-
+#######
+# RUN WHOLE PROGRAMME USING MAIN FUNCTION
+#######
+    
 def main():
     # 1 Sets up help and simple validations for command line flag inputs.
     opts = commandLine_flagOptions()
