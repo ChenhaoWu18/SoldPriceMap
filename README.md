@@ -35,12 +35,12 @@ The steps I took are:
 #### B. For the Backend/junior role
 
 - Go to the [Backend](Backend) folder:
-  Download the [readdata_pandas_plt](Backend/readdata_pandas_plt.py) file;
+  Download the [plotSoldPriceMap_v2](Backend/plotSoldPriceMap_v2.py) file;
   Save it in the same folder as sold-price-data.txt 
   
 - Example command in terminal: 
   ```
-  python readdata_pandas_plt.py sold-price-data.txt spm.png 6 8
+  python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png -g 6 -d 8
   ```
   
   This command wil generate a png file called spm.png with a graph size of 6 and a scatter dot size of 8.
@@ -49,26 +49,33 @@ The steps I took are:
 
 - Detailed explaination for the inputs:
 
-    * arg1 -  input-text-data-file-name.txt
-    * arg2 -  output-graph-file-name.pny
-    * arg3 -  The size of the output graph,
-            I suggest choosing a number between 5 and 30.
-           
-    * arg4 -  The size of each scatter point in the graph,
-            I suggest choosing a number similar to the graph size,
-            so that a larger graph has bigger dots.
+   * -h : Print this help message and exit.
+   * -i FILE : input-text-data-file-name.txt, process text from input file FILE.
+   * -o FILE : output-graph-file-name.png, write results to output file FILE.
+   * -g PARAMETER: The size of the output graph, 
+                    I suggest choosing a number between 5 and 30.
+   * -d PARAMETER: The size of each scatter point in the graph, 
+                    I suggest choosing a number similar to the graph size,
+                    so that a larger graph has bigger dots.
+- code structure, please see more details at [Backend-README](/Backend/README.md) file
 
 #### C. Simple website demo
 Please clone this repo for easier running of the code.
 - Go to [FullStack](FullStack) folder.
   * If you have copied/cloned all folders and files from FullStack dir:
   
-   Run the command: 
-   ```
-   python manage.py runserver
-   ```
-   
-   Open the local server http://127.0.0.1:8000/
+    - installations:
+       Required libraries are listed in requirements.txt file, run the installation for Django and Bokeh with:
+       ```
+       pip install -r requirements.txt
+       ```
+    - run python code: 
+       Run the command: 
+       ```
+       python manage.py runserver
+       ```
+
+       Open the local server http://127.0.0.1:8000/
   
 <img src='/FullStack/webDemo.png' height="50%" width="50%">
 
