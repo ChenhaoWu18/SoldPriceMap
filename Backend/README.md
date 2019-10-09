@@ -9,7 +9,7 @@
         -- Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
     4. Added code structure for main functionalities explaination.
 ```
-A. Input flags
+#### A. Input flags
     * -h : Print this help message and exit.
     * -i FILE : input-text-data-file-name.txt, process text from input file FILE.
     * -o FILE : output-graph-file-name.png, write results to output file FILE.
@@ -20,7 +20,7 @@ A. Input flags
                     so that a larger graph has bigger dots.
                     
                     
-B. Example inputs: copy this command to the terminal: 
+#### B. Example inputs: copy this command to the terminal: 
     *   Using the default graph size and dot size:           
     ```
         python plotSoldPriceMap_v2.py -i sold-price-data.txt -o priceMap.png    
@@ -32,7 +32,7 @@ B. Example inputs: copy this command to the terminal:
     *   Hint: enter to run the code, you can then find a file called priceMap.png            
         which contains the graph that the program just ploted. 
         
-C. What does this file do?
+#### C. What does this file do?
     *  Reads the text file to the dataframe (X, Y, P).
     *  Plots each point onto a grid. 
         The points given colours representing how expensive 
@@ -45,7 +45,7 @@ C. What does this file do?
         95% - 100%  cyan
     
     
-D. Code structure for main functionalities:
+#### D. Code structure for main functionalities:
 
 <img src='code_structure_spm.png' height="50%" width="50%">
 
@@ -71,7 +71,7 @@ D. Code structure for main functionalities:
             (3) Save the plot to a .png file.
             
 ```
-E. Futher improvements:
+#### E. Futher improvements:
     *  Unit tests - coming later.
     *  System tests - coming later.
     *  Using both short and long input options 
@@ -80,4 +80,4 @@ E. Futher improvements:
     ```
     *  I can add code structure for the command line flag settings if required.
 
-F. The libraries used are: matplotlib, pandas, numpy, sys, & getopt.
+#### F. The libraries used are: matplotlib, pandas, numpy, sys, & getopt.
