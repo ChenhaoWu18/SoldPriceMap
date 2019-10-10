@@ -1,9 +1,29 @@
+```
+update 10/10/19
+full-stack:
+    1. color bar problem solved! yeah ^@^
+    2. next to do   - check varible/function names
+                    - write/draw code structure
+                    - make the front-end nicer, maybe add range bar
+                    - tests
+back-end:
+    1. Updated the file name to plotSoldPriceMap_v2.py
+    2. Using getopt command line flag I/O rather than args.
+        Reason: more informative, graph size and dot size become optional inputs. 
+    3. Updated varible/function names (I really appreciate for the feedback!)
+        -- Updated variable names to readable camel style. 
+        -- Updated function names to readable snake style (sometimes combined with camel style within the name).   
+        -- Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
+    4. Added code structure for main functionalities explaination.
+    5. next to do - tests
+```
+
 # SoldPriceMap
 #### A. Problem description and proposed solution
-The problem I tried to solve here is to load the text file data and plot the data into a heatmap style scatter-graph on a website. Please see this flow diagram for the steps I took to solve the problem and the detailed descriptions that follow below:
+The problem I tried to solve here is to load the text file data and plot the data into a heatmap style scatter-graph on a website. Please see this flow diagram for the steps I took to solve the problem and the detailed descriptions that follow below (updated version10/10):
 
 
-<img src='flowdia.png' height="50%" width="50%">
+<img src='updateflowdia10_10_19.png' height="50%" width="50%">
 
 ```
 The steps I took are:
@@ -81,7 +101,7 @@ Please clone this repo for easier running of the code.
 
        Open the local server http://127.0.0.1:8000/
   
-        <img src='/FullStack/webDemo.png' height="50%" width="50%">
+        <img src='/FullStack/happySPM.png' height="50%" width="50%">
 
 
 
