@@ -35,14 +35,18 @@ def plotMap(infileName, plot_title, dot_size, col_type, bounds):
     p.grid.grid_line_color = 'black'
     p.axis.axis_line_color = 'black'
     p.axis.major_tick_line_color = 'black'
-    p.axis.major_label_text_font_size = '5pt'
+    p.axis.major_label_text_font_size = '10pt'
 
     # 4 draw dots with color coresponding to the P value in X, and Y coordinates.
     p.circle(x=dX, y=dY,  size=dot_size, color=colors, line_color=None)
     
     # 5 mapping color bar color same with the plot and fix the ticker boundaries.
-    mapper = LinearColorMapper(palette=col_type, low=dP.min(), high=dP.max())
+    palette_c = [ "yellow" ]*5 + ["pink"]*20 + ["red"]*50 + ["green"]*20 + ["cyan"] *5
+    #Then this palette could be used with a LinearColorMapper with low, high = (0, 100).
+    mapper = LinearColorMapper(palette=palette_c, low=dP.min(), high=dP.max())
+    
     ticker = FixedTicker(ticks=bounds)
+    
     color_bar = ColorBar(color_mapper=mapper, major_label_text_font_size='5pt',
                          ticker=ticker,
                          formatter=PrintfTickFormatter(format='%d%%'),
@@ -52,6 +56,7 @@ def plotMap(infileName, plot_title, dot_size, col_type, bounds):
     color_bar_p = figure(title='price %',title_location="right", 
                         width=110, toolbar_location=None, 
                         outline_line_color=None)
+    
     color_bar_p.add_layout(color_bar, 'right')
     color_bar_p.title.align="center"
     layout=row(p, color_bar_p)

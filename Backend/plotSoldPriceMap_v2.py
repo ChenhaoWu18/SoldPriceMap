@@ -147,7 +147,7 @@ def commandLine_flagOptions():
     except getopt.GetoptError:
         sys.exit(2) #Use exit(2) for command line syntax errors and exit(1) for all other kind of errors.
     opts = dict(opts)
-    
+    print(opts)
     #    1.b. If the are no flags.
     if len(args) > 0: # Do a sys input check.  
         print("\n** ERROR: no arg files - only options! **", file=sys.stderr)
