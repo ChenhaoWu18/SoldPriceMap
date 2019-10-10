@@ -1,5 +1,5 @@
 
-# update 10/10/19
+## update 10/10/19
 #### full-stack:
    1. color bar problem solved! yeah :dancer:
    2. next to do   
@@ -12,9 +12,9 @@
    2. Using getopt command line flag I/O rather than args.
         Reason: more informative, graph size and dot size become optional inputs. 
    3. Updated varible/function names (I really appreciate for the feedback!)
-        -- Updated variable names to readable camel style. 
-        -- Updated function names to readable snake style (sometimes combined with camel style within the name).   
-        -- Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
+        - Updated variable names to readable camel style. 
+        - Updated function names to readable snake style (sometimes combined with camel style within the name).   
+        - Some unchanged names based on conventions, I will adapt to the company tech team style when I can read scripts from you. :)
    4. Added code structure for main functionalities explaination.
    5. next to do - tests
 
