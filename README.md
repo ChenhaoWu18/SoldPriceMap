@@ -2,11 +2,13 @@
 ## update 10/10/19
 #### full-stack:
    1. color bar problem solved! yeah :dancer:
-   2. next to do   
+   2. add install requirment.txt
+   3. next to do   
         - check varible/function names
         - write/draw code structure
-        - make the front-end nicer, maybe add range bar
         - tests
+        - make the front-end nicer, maybe add range bar
+        
 #### back-end:
    1. Updated the file name to plotSoldPriceMap_v2.py
    2. Using getopt command line flag I/O rather than args.
