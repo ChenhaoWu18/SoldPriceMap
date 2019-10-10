@@ -101,7 +101,7 @@ Please clone this repo for easier running of the code.
 
        Open the local server http://127.0.0.1:8000/
   
-        <img src='/FullStack/happySPM.png' height="50%" width="50%">
+        <img src='/FullStack/webDemoSPM.png' height="50%" width="50%"> update 10/10
 
 
 
